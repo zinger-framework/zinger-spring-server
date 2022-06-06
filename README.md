@@ -1,6 +1,9 @@
 <h1 align="center">
-  Zinger - Hyperlocal Delivery Framework
+  Zinger Framework
 </h1>
+<h4 align="center">
+  Build your own Ecommerce Marketplace 🛍️
+</h4>
 
 <p align="center">
   <strong>
@@ -15,9 +18,9 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/zinger-framework/zinger-core"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/zinger-framework/zinger-spring-server"></a>
   <a href="https://zinger.pw/docs/api"><img alt="Documentation" src="https://img.shields.io/badge/code-documented-brightgreen.svg?style=flat-square"></a>
-  <a href="https://github.com/zinger-framework/zinger-core/pulls"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"></a>
+  <a href="https://github.com/zinger-framework/zinger-spring-server/pulls"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"></a>
 </p>
 
 An Open Source Framework for building Hyperlocal Delivery Mobile and Web applications.
@@ -50,38 +53,38 @@ Check out the [database schema](https://drawsql.app/zinger-technologies/diagrams
 
 #### Fork Project
 
-* [Fork](https://github.com/zinger-framework/zinger-core/fork) the Main Repository
+* [Fork](https://github.com/zinger-framework/zinger-spring-server/fork) the Main Repository
 * Clone the forked repository locally `git clone forked_repo_url`
 
 #### Setup DB
 
 * Open MySQL Workbench
-* Run the [DB_INIT.sql](https://github.com/zinger-framework/zinger-core/blob/master/sql/DB_INIT.sql) script to create the tables, indexes and triggers.
-* Run the [DB_PROC.sql](https://github.com/zinger-framework/zinger-core/blob/master/sql/DB_PROC.sql) script to create the procedures.
-* Run the [DB_INSERT.sql](https://github.com/zinger-framework/zinger-core/blob/master/sql/DB_INSERT.sql) script to populate the database.
-* Set your MySQL username and password in [application.properties](https://github.com/zinger-framework/zinger-core/blob/master/src/main/resources/application.properties)
+* Run the [DB_INIT.sql](https://github.com/zinger-framework/zinger-spring-server/blob/master/sql/DB_INIT.sql) script to create the tables, indexes and triggers.
+* Run the [DB_PROC.sql](https://github.com/zinger-framework/zinger-spring-server/blob/master/sql/DB_PROC.sql) script to create the procedures.
+* Run the [DB_INSERT.sql](https://github.com/zinger-framework/zinger-spring-server/blob/master/sql/DB_INSERT.sql) script to populate the database.
+* Set your MySQL username and password in [application.properties](https://github.com/zinger-framework/zinger-spring-server/blob/master/src/main/resources/application.properties)
 
 #### Setup Firebase Admin SDK
 * Create a new [Firebase](https://console.firebase.google.com/) project 
 * Navigate to `Project setting -> Service accounts -> Generate service account -> Generate new private key`
-* Set your credentials file path in [application.properties](https://github.com/zinger-framework/zinger-core/blob/master/src/main/resources/application.properties)
+* Set your credentials file path in [application.properties](https://github.com/zinger-framework/zinger-spring-server/blob/master/src/main/resources/application.properties)
 
 ## Build & Deploy
 
 #### Eclipse IDE
 
 * Choose `File -> Import -> Maven -> Existing Maven projects`
-* Right-click [MainApplication.java](https://github.com/zinger-framework/zinger-core/blob/master/src/main/java/com/food/ordering/zinger/MainApplication.java) and choose `Run As -> Java Application`  
+* Right-click [MainApplication.java](https://github.com/zinger-framework/zinger-spring-server/blob/master/src/main/java/com/food/ordering/zinger/MainApplication.java) and choose `Run As -> Java Application`  
 
 #### IntelliJ IDEA
 
 * Choose `File -> Open` and choose the project location
-* Right-click [MainApplication.java](https://github.com/zinger-framework/zinger-core/blob/master/src/main/java/com/food/ordering/zinger/MainApplication.java) and choose `Run MainApplication.main()` 
+* Right-click [MainApplication.java](https://github.com/zinger-framework/zinger-spring-server/blob/master/src/main/java/com/food/ordering/zinger/MainApplication.java) and choose `Run MainApplication.main()` 
 
 #### Test
 
 * Visit [localhost:8080](http://localhost:8080) in the browser to check if the setup is successful.
-* Test the endpoints in Postman by importing the [API collection](https://github.com/zinger-framework/zinger-core/blob/master/Zinger%20framework%20(Release).json)
+* Test the endpoints in Postman by importing the [API collection](https://github.com/zinger-framework/zinger-spring-server/blob/master/Zinger%20framework%20(Release).json)
 * For detailed API documentation, please refer [API Docs](https://documenter.getpostman.com/view/6369926/TVRoZ6jW)
 
 #### Deploy
@@ -94,7 +97,3 @@ your localhost. Also, you can host in any of the online cloud service providers 
 Zinger framework is completely free and made open-source. Our team is really happy to support contributors from all around the world. Fork our project and send us your pull request: maybe sample mobile apps using our framework, minor extensions or major improvements.
 
 **Every contribution is awesome and welcome!**
-
-## Contributors
-* <a href="https://github.com/ddlogesh" target="_blank"><b>Logesh Dinakaran</b></a>
-* <a href="https://github.com/harshavardhan98" target="_blank"><b>Harshavardhan P</b></a>
